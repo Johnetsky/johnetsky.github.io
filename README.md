@@ -4,4 +4,4 @@
 
 **Hello world**
 
-[My site is](http://johnetsky.github.io)
+[My site is](https://johnetsky.github.io)
