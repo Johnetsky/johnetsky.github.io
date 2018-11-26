@@ -15,9 +15,3 @@ function ChangeImage() {
 	CounterIMG = 0;
 }
 }
-
-
-function Statistix()
-{
-	 document.getElementById("Thnx") = "Thank you for submitting the info!";
-}
