@@ -1,0 +1,162 @@
+!DOCTYPE html>
+<html>
+
+<head>
+  
+  <title> Johnetsky's INDEX </title>
+  <style>
+    body {background-color: gray;}
+    h1 {color: black;}
+    p {color: black;}
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* Header/logo Title */
+.header {
+    padding: 15px;
+    text-align: center;
+    background: #547CAF;
+    color: white;
+}
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    background-color: #00082B;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Active/current link */
+.navbar a.active {
+    background-color: #666;
+    color: white;
+}
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #C5F1DD;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+      
+</head>
+  
+<body>
+  <div class="header"><h2>Welcome to my GitHub page!</h2></div>
+  
+<div class="navbar">
+  <a href="/index.html">Home</a>
+  <a href="/hobbies.html">Hobby's</a>
+  <a href="/casual.html">Casual</a>
+</div>
+    
+  <div class="row">
+    <div class="side">
+      <h2>About Me</h2>
+        <p id="Image"> 
+   <img id="MyImage" src="/PICS/MySelf.jpg" style="width:100%;">
+  </p>
+
+      <p>My name is Ionut-Alexandru Adam</p>
+      <p>I study Advanced Intelligent Electronic Systems at University "1 Decembrie 1918" of Alba-Iulia</p>
+      <img id="UnivIMG" src="/PICS/uab.jpg" style="width:100%;">
+  </div>
+   
+  <div class="main">
+      <h2>Business section</h2>
+      <p>
+    <b>Links of interest:</b>
+  </p>
+  <p>
+    <a href="https://github.com/Luurkesien/luurkesien.github.io/tree/master/OpenScad">OpenScad Projects</a>
+  </p>
+   <p>
+    <a href="https://github.com/Luurkesien/luurkesien.github.io/tree/master/KiCad">KiCad Projects</a>
+  </p>
+   <p>
+    <a href="https://github.com/Luurkesien/luurkesien.github.io/tree/master/Software">Software Projects</a>
+  </p>
+    <p>
+    <a href="https://github.com/Luurkesien/luurkesien.github.io/tree/master/LTSpice">LTSpice Projects</a>
+  </p>
+   <p>
+    <a href="https://github.com/Luurkesien/luurkesien.github.io/tree/master/Documents/MyCV.pdf"><b>CV</b></a>
+    </p>
+    
+  </div>
+  </div>
+    
+    
+
+  <div class="footer">
+   <p><b> Contact info:</b> </p>
+    <p>Mail: adamionutalexandru11@gmail.com</p>
+    <p><a href="https://www.instagram.com/ionut_alexandru11/">Instagram</a></p>
+    </div>
+    
+  
+<script src="/scripts.js"> </script>
+</body>
+
+</html>
