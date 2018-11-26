@@ -1,7 +1,7 @@
 # johnetsky.github.io
 
-## Aplicatii web
+## I see you!
 
 **Hello world**
 
-[My site is](https://johnetsky.github.io)
+[My github page](https://johnetsky.github.io)
