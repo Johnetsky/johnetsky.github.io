@@ -9,6 +9,7 @@ var lastY=0;
 
 function on_touch(e)
 {
+	e.preventDefault();
 	for(var i=0; i<e.changedTouches.length; i++)
 	{
 		var context = canvas.getContext("2d");
@@ -22,6 +23,7 @@ function on_touch(e)
 
 function on_touch_move(e)
 {
+	e.preventDefault();
 	for(var i=0; i<e.changedTouches.length; i++)
 	{
 		var context = canvas.getContext("2d");
