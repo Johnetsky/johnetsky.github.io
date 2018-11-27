@@ -4,8 +4,8 @@ var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch);
 canvas.addEventListener("touchmove", on_touch_move);
 var rect = canvas.getBoundingClientRect();
-var lastX=0;
-var lastY=0;
+var lastX =0;
+var lastY =0;
 
 function on_touch(e)
 {
@@ -13,11 +13,12 @@ function on_touch(e)
 	for(var i=0; i<e.changedTouches.length; i++)
 	{
 		var context = canvas.getContext("2d");
-		context.beginPath();
-		context.arc(e.changedTouches.item(i).pageX - rect.left, e.changedTouches.item(i).pageY - rect.top, 20, 0, 2*Math.PI);
+		context.beginPath
+		context.lineWidth = 1;
+		context.arc(e.changedTouches.item(i).pageX - rect.left, e.changedTouches.item(i).pageY - rect.top, 10, 0, 2*Math.PI);
+		context.stroke();
 		lastX= e.changedTouches.item(i).pageX;
 		lastY= e.changedTouches.item(i).pageY;
-		context.stroke();
 	}
 }
 
@@ -29,7 +30,7 @@ function on_touch_move(e)
 		var context = canvas.getContext("2d");
 		context.beginPath();
 		context.lineWidth= 1;
-		context.arc(e.changedTouches.item(i).pageX - rect.left, e.changedTouches.item(i).pageY - rect.top, 20, 0, 2*Math.PI);
+		context.arc(e.changedTouches.item(i).pageX - rect.left, e.changedTouches.item(i).pageY - rect.top, 10, 0, 2*Math.PI);
 		context.stroke();
 		context.beginPath();
 		context.lineWidth= 20;
@@ -37,5 +38,6 @@ function on_touch_move(e)
 		context.lineTo(e.changedTouches.item(i).pageX - rect.left, e.changedTouches.item(i).pageY - rect.top);
 		lastX= e.changedTouches.item(i).pageX;
 		lastY= e.changedTouches.item(i).pageY;
+		context.stroke();
 	}	
 }
