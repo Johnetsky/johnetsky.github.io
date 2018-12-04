@@ -14,6 +14,6 @@ function vorbeste()
 {
 	var enunt = new SpeechSynthesisUtterance();
 	enunt.text = document.getElementById("id_text").value;
-	enunt.lang = "en-US Microsoft David Desktop";
+	enunt.lang = "fr-FR";
 	synth.speak(enunt);
 }
